@@ -71,17 +71,6 @@
     .feature-box strong, .pricing-box h3, .solution-box strong {
       color: #60a5fa;
     }
-    .partners {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 2rem;
-      flex-wrap: wrap;
-      margin-top: 2rem;
-    }
-    .partners img {
-      height: 32px;
-    }
     input[type="email"] {
       padding: 0.75rem;
       font-size: 1rem;
@@ -112,6 +101,21 @@
       align-items: center;
       flex-wrap: wrap;
     }
+    .summary-section {
+      background: url('https://images.unsplash.com/photo-1633356127587-b9ec36c12ba6?auto=format&fit=crop&w=1350&q=80') center center/cover no-repeat;
+      padding: 5rem 2rem;
+      text-align: center;
+      color: #f8fafc;
+    }
+    .summary-section p {
+      max-width: 800px;
+      margin: 0 auto;
+      background-color: rgba(15, 23, 42, 0.85);
+      padding: 2rem;
+      border-radius: 0.75rem;
+      font-size: 1.1rem;
+      line-height: 1.7;
+    }
     footer {
       text-align: center;
       padding: 3rem 2rem;
@@ -136,16 +140,10 @@
     <p>Track, clean up, and secure your online accounts — automatically.</p>
   </header>
 
-  <div class="section" id="partners" data-aos="fade-up">
-    <h2>Trusted by users who secure accounts across:</h2>
-    <div class="partners">
-      <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Gmail">
-      <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="Facebook">
-      <img src="https://cdn-icons-png.flaticon.com/512/1384/1384031.png" alt="Instagram">
-      <img src="https://cdn-icons-png.flaticon.com/512/1384/1384015.png" alt="Twitter">
-      <img src="https://cdn-icons-png.flaticon.com/512/888/888879.png" alt="Microsoft">
-      <img src="https://cdn-icons-png.flaticon.com/512/888/888853.png" alt="Google">
-    </div>
+  <div class="summary-section" data-aos="fade-up">
+    <p>
+      Safe Harbor is a lightweight cybersecurity dashboard for consumers, freelancers, and small teams that helps users secure their online accounts through better identity hygiene, breach monitoring, phishing protection, and multi-factor authentication (MFA) guidance. Safe Harbor acts as a personal security companion that quickly scans for exposed credentials, checks critical accounts for missing MFA, and flags phishing risks – delivering actionable insights and integrating with powerful security tools within minutes of signup.
+    </p>
   </div>
 
   <div class="section" id="benefits" data-aos="fade-up">
@@ -185,8 +183,8 @@
     <div class="pricing-plans">
       <div class="pricing-box">
         <h3>Free Plan</h3>
-        <p>✓ One-time security scan<br>✓ Email breach check<br>✓ MFA checklist</p>
-        <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <p>✓ Identity security scan and hygiene assessment<br>✓ Email breach check<br>✓ MFA checklist<br> 1 click deletion of stale accounts </p>
+        <form action="https://formspree.io/f/xkgjqrln" method="POST">
           <input type="hidden" name="plan" value="Free Plan">
           <div class="signup-form">
             <input type="email" name="email" placeholder="Enter your email" required />
@@ -197,7 +195,7 @@
       <div class="pricing-box">
         <h3>Pro – $8/month</h3>
         <p>✓ Real-time monitoring<br>✓ Threat alerts<br>✓ Security coaching<br>✓ Priority support</p>
-        <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <form action="https://formspree.io/f/xkgjqrln" method="POST">
           <input type="hidden" name="plan" value="Pro Plan">
           <div class="signup-form">
             <input type="email" name="email" placeholder="Enter your email" required />
@@ -207,8 +205,8 @@
       </div>
       <div class="pricing-box">
         <h3>Expert Audit</h3>
-        <p>✓ Custom review by a certified expert<br>✓ Tailored security strategy<br>✓ Great for VIPs & small teams</p>
-        <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <p>✓ Custom review by a certified expert<br>✓ Tailored security strategy<br>✓ Great for VIPs, High Risk Individuals and those recovery from a breach</p>
+        <form action="https://formspree.io/f/xkgjqrln" method="POST">
           <input type="hidden" name="plan" value="Expert Audit">
           <div class="signup-form">
             <input type="email" name="email" placeholder="Enter your email" required />
