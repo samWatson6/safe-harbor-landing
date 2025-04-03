@@ -28,6 +28,24 @@
       font-size: 1.25rem;
       color: #cbd5e1;
     }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background-color: #0f172a;
+    }
+    nav a {
+      color: #cbd5e1;
+      margin: 0 1rem;
+      text-decoration: none;
+    }
+    nav a.cta {
+      background-color: #3b82f6;
+      color: white;
+      padding: 0.5rem 1rem;
+      border-radius: 0.375rem;
+    }
     .section {
       padding: 4rem 2rem;
       max-width: 1000px;
@@ -38,19 +56,19 @@
       margin-bottom: 1.5rem;
       color: #f1f5f9;
     }
-    .features, .pricing-plans {
+    .features, .pricing-plans, .solutions {
       display: flex;
       flex-wrap: wrap;
       gap: 1.5rem;
     }
-    .feature-box, .pricing-box {
+    .feature-box, .pricing-box, .solution-box {
       flex: 1 1 280px;
       background-color: #1e293b;
       border: 1px solid #334155;
       border-radius: 0.75rem;
       padding: 1.5rem;
     }
-    .feature-box strong, .pricing-box h3 {
+    .feature-box strong, .pricing-box h3, .solution-box strong {
       color: #60a5fa;
     }
     .partners {
@@ -103,12 +121,22 @@
   </style>
 </head>
 <body>
+  <nav>
+    <div><strong>Safe Harbor</strong></div>
+    <div>
+      <a href="#benefits">Benefits</a>
+      <a href="#solutions">Solutions</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#signup" class="cta">Get Started</a>
+    </div>
+  </nav>
+
   <header data-aos="fade-up">
     <h1>Safe Harbor Identity Security</h1>
     <p>Track, clean up, and secure your online accounts — automatically.</p>
   </header>
 
-  <div class="section" data-aos="fade-up">
+  <div class="section" id="partners" data-aos="fade-up">
     <h2>Trusted by users who secure accounts across:</h2>
     <div class="partners">
       <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Gmail">
@@ -116,10 +144,11 @@
       <img src="https://cdn-icons-png.flaticon.com/512/1384/1384031.png" alt="Instagram">
       <img src="https://cdn-icons-png.flaticon.com/512/1384/1384015.png" alt="Twitter">
       <img src="https://cdn-icons-png.flaticon.com/512/888/888879.png" alt="Microsoft">
+      <img src="https://cdn-icons-png.flaticon.com/512/888/888853.png" alt="Google">
     </div>
   </div>
 
-  <div class="section" data-aos="fade-up">
+  <div class="section" id="benefits" data-aos="fade-up">
     <h2>Key Benefits</h2>
     <div class="features">
       <div class="feature-box"><strong>Ongoing Breach Monitoring:</strong> Real-time alerts when your info appears in new data leaks.</div>
@@ -130,7 +159,28 @@
     </div>
   </div>
 
+  <div class="section" id="solutions" data-aos="fade-up">
+    <h2>Solutions We Deliver</h2>
+    <div class="solutions">
+      <div class="solution-box"><strong>Reused Password Detection</strong><br>Uncover accounts using the same password and take action.</div>
+      <div class="solution-box"><strong>Inactive Account Cleanup</strong><br>Identify and remove accounts you no longer use.</div>
+      <div class="solution-box"><strong>Password Manager Coverage</strong><br>Find accounts not protected by a secure vault.</div>
+      <div class="solution-box"><strong>Phishing Defense Layer</strong><br>Scan links and messages to prevent scams.</div>
+    </div>
+  </div>
+
   <div class="section" data-aos="fade-up">
+    <h2>Who It’s For</h2>
+    <p>Safe Harbor Identity Security is ideal for:</p>
+    <ul>
+      <li>✓ Politicians, business leaders, and military/government employees</li>
+      <li>✓ High-net-worth individuals and families</li>
+      <li>✓ Small business owners, freelancers, and influencers</li>
+      <li>✓ Anyone who wants control over their personal online security</li>
+    </ul>
+  </div>
+
+  <div class="section" id="pricing" data-aos="fade-up">
     <h2>Pricing</h2>
     <div class="pricing-plans">
       <div class="pricing-box">
